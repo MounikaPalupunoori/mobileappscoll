@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "Scool",
+    "slug": "goto-scool",
+    "version": "2.0.7",
+    "orientation": "portrait",
+    "icon": "./assets/logo2.png",
+    "splash": {
+      "image": "./assets/logo2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scool.app",
+      "infoPlist": {
+        "NSCameraUsageDescription":"Allow Scool App to access your camera",
+        "NSMicrophoneUsageDescription":"Allow Scool App to access your microphone",
+        "NSContactsUsageDescription":"Allow Scool App to access your Contacts",
+       
+        "CFBundleShortVersionString": "2.0.7",
+        "NSAppTransportSecurity": { 
+        "NSAllowsArbitraryLoads": true 
+      }
+      },
+      "buildNumber": "2"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo3.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "usesCleartextTraffic": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "VIBRATE",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.scool.app"
+    },
+    "web": {
+      "favicon": "./assets/logo2.png"
+    },
+    "plugins": [
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Scool App to access your contacts."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Scool App to access your photos.",
+          "savePhotosPermission": "Allow Scool App to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with the friends."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Scool App to access your camera",
+          "microphonePermission": "Allow Scool App to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/LucidaGrandeBold.ttf",
+            "./assets/fonts/LucidaGrande.ttf",
+            "./assets/fonts/LucidaGrande.ttf"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "41642aea-e93d-49f0-b9af-3776c6450e26"
+      }
+    },
+    "owner": "iosedvenswa"
+  }
+}
